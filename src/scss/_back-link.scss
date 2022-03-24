@@ -1,0 +1,9 @@
+.back-link{
+  display: flex;
+  align-items: center;
+  color: $deddie-grey-1;
+  text-decoration: none;
+  span{
+    margin-right: .5rem;
+  }
+}

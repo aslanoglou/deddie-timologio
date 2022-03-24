@@ -1,0 +1,51 @@
+.btn {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  min-width: 183px;
+  padding: 0.438rem 0.75rem;
+  &--width-100{
+    min-width: unset;
+    width: 100%;
+  }
+  &.w-auto{
+    min-width: unset;
+  }
+
+  &.btn-primary {
+    border-color: $orange;
+    background-color: $orange;
+
+    &:hover {
+      border-color: $deddie-orange-dark;
+      background-color: $deddie-orange-dark;
+    }
+  }
+
+  &.btn-transparent {
+    border-color: $orange;
+    background-color: unset;
+    color: $orange;
+
+    &:hover {
+      border-color: $deddie-orange-dark;
+      background-color: unset;
+      color: $deddie-orange-dark;
+    }
+  }
+
+  &.btn-outline-primary {
+    border-color: $orange;
+    color: $orange;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $deddie-orange-fade;
+      color: $deddie-orange-fade;
+    }
+  }
+  svg{
+    vertical-align: text-top;
+    margin-right: .5rem;
+  }
+}

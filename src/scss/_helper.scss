@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding-bottom: 50px;
+  font-size: 12px;
+  position: relative;
+  background-color: $deddie-grey-2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    background-image: url('/dist/images/form-bg.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media-breakpoint-down(md) {
+      background-size: contain;
+    }
+  }
+}
+.bg-blue{
+  background-color: $blue;
+}
+.white-color{
+  color: $white;
+}
+.grey-color {
+  color: $deddie-grey-1;
+}
+.blue-color {
+  color: $blue;
+}
+.orange-color {
+  color: $orange;
+}
+.peach-color {
+  color: $deddie-peach-1;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.tooltip-inner {
+  background-color: $deddie-light-beige-1;
+  border-radius: 4px;
+  opacity: 1 !important;
+  font-size: 10px !important;
+  color: $deddie-black-1;
+}
+
+.tooltip .tooltip-arrow::before {
+  border-right-color: $deddie-light-beige-1 !important;
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: $deddie-light-beige-1;
+}
+
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: $deddie-light-beige-1;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: $deddie-light-beige-1;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: $deddie-light-beige-1;
+}
+
+
+label{
+  i{
+    font-style: normal;
+    color: $deddie-grey-1;
+  }
+}
+.form-check .form-check-input{
+  width: 1rem;
+  height: 1rem;
+  margin-top: 2px;
+  margin-left: -1rem;
+  margin-right: .5rem;
+  &:not(:checked){
+    border-color: $deddie-grey-1;
+  }
+}
+
+.form-switch {
+  padding-left: 44px;
+  .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    &:not(:checked){
+      background-color: $deddie-light-grey-1;
+      border-color: $deddie-light-grey-1;
+    }
+    width: 36px;
+    height: 1rem;
+    margin-left: -44px;
+  }
+}
+
+
+
+.was-validated[novalidate] {
+  .d-flex ~ .invalid-feedback{
+    display: block;
+  }
+
+}
+
+textarea{
+  resize: none;
+}
+
+
+
+
+.fs-10{
+  font-size: 10px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.mt-72{
+  margin-top: 72px;
+}
+.mb-72{
+  margin-bottom: 72px;
+}
+ul{
+  padding-left: 1rem;
+  ul{
+    list-style: lower-roman;
+  }
+}
+
+.modal-header{
+  border-bottom: none;
+  padding-top: 44px;
+}
+.modal-body{
+  h4{
+    font-size: 20px;
+    color: $deddie-black-1;
+  }
+}
+.modal-footer{
+  border-top: none;
+  padding-bottom: 44px;
+}
+
+.or{
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:50%;
+    width: 100%;
+    height: 1px;
+    background-color: $deddie-light-grey-1;
+  }
+  span{
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+    color: $deddie-grey-1;
+  }
+}
+
+input[type="date"]{
+  background-color: transparent;
+  max-width: 150px;
+  background-image: url('/dist/images/icon-calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center right 14px;
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+  &.small{
+    font-size: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    &::-webkit-calendar-picker-indicator{
+     width: 16px;
+    }
+  }
+}
+
+hr {
+  margin: 24px 0;
+  color: $deddie-grey-2;
+  background-color: currentColor;
+  border: 0;
+  opacity: 1;
+}
+
+.form-label{
+  line-height: 14.4px;
+}
+.flex-25{
+  flex: 0 0 25px;
+  text-align: center;
+}
+
+.tooltip{
+  span{
+    background-color: white;
+    padding: 2px 5px;
+  }
+}

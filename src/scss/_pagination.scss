@@ -1,0 +1,36 @@
+.pagination{
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+  .page-item{
+    &:first-child{
+      margin-right: auto;
+    }
+    &:last-child{
+      margin-left: auto;
+    }
+    .page-link{
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      .icon-chevron-left{
+        margin-right: .5rem;
+      }
+      .icon-chevron-right{
+        margin-left: .5rem;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+      strong{
+        color: $deddie-grey-1;
+      }
+    }
+    &.active{
+      .page-link{
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+}

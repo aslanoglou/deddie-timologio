@@ -1,0 +1,39 @@
+header{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 43px;
+  .col-auto{
+    &:nth-child(2){
+      @include media-breakpoint-down(lg){
+        order: 1;
+        flex: 0 0 100%;
+        padding-top: 18px;
+      }
+    }
+  }
+  .header__logo{
+    @include media-breakpoint-down(lg){
+      img{
+        width: 57px;
+        height: auto;
+      }
+    }
+  }
+  .header__support{
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 40px;
+    color: $blue;
+  }
+  .header--timologio{
+    .col-auto{
+      &:nth-child(2){
+        @include media-breakpoint-down(lg){
+          order: 1;
+          flex: 0 0 100%;
+          padding-top: 18px;
+        }
+      }
+    }
+  }
+}

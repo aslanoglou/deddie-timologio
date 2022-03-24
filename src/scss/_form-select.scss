@@ -1,0 +1,31 @@
+.form-select {
+  font-size: 12px;
+  border-color: $blue;
+  border-radius: 0;
+  padding: 0.625rem 2.25rem 0.625rem 0.75rem;
+  &--no-wrap {
+    white-space: break-spaces;
+  }
+  &:invalid {
+    option{
+      color: $deddie-black-1;
+    }
+    color: $deddie-grey-1;
+  }
+  &--transparent{
+    background-color: transparent;
+  }
+  &.w-auto{
+    padding: .3rem 2.25rem .3rem 0.5rem;
+  }
+  &--transparent{
+    background-color: transparent;
+    &:focus{
+      background-color: $white;
+    }
+  }
+  option{
+    line-height: 20px;
+    padding: 50px;
+  }
+}

@@ -1,0 +1,22 @@
+.search-group{
+  & > .form-control{
+    border: none;
+    border-bottom: solid 1px $blue;
+    background-color: transparent;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  & > .btn{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px $blue;
+    min-width: unset;
+    border-radius: unset;
+    color: $blue;
+
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}

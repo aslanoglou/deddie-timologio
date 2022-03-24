@@ -1,0 +1,105 @@
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-control:valid,
+.form-control.is-valid, {
+  background-image: none;
+}
+.was-validated input[type="date"]:invalid,
+input[type="date"].is-invalid,
+.was-validated input[type="date"]:valid,
+input[type="date"].is-valid, {
+  background-image: url('/dist/images/icon-calendar.svg');
+  padding-right: 5px!important;
+}
+
+
+
+.form-control{
+  font-size: 12px;
+  border-color: $blue;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem;
+  &--w-60{
+    max-width: 60px;
+    flex: 0 0 60px;
+  }
+}
+
+.custom-feedback{
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #198754;
+  span{
+    display: inline-block;
+    width: 14px;
+    text-align: center;
+    &:before{
+      content: "\2022";
+    }
+  }
+  &.valid-feedback{
+    color: $green;
+    span{
+      &:before{
+        content: "\e904";
+      }
+    }
+  }
+
+  &.invalid-feedback{
+    color: $red;
+    span{
+      &:before{
+        content: "\e90e";
+      }
+    }
+  }
+}
+
+.valid-feedback{
+  &.d-block{
+    color: $deddie-grey-1;
+    span{
+      &:before{
+        content: "\2022";
+      }
+    }
+  }
+}
+.invalid-feedback {
+  &.d-block {
+    color: $deddie-grey-1;
+    span{
+      &:before{
+        content: "\2022";
+      }
+    }
+  }
+}
+
+.was-validated :valid ~ .valid-feedback.d-block,
+.was-validated :valid ~ .valid-tooltip.d-block,
+.is-valid ~ .valid-feedback.d-block,
+.is-valid ~ .valid-tooltip.d-block,
+{
+  color: $green;
+  span{
+    &:before{
+      content: "\e906";
+    }
+  }
+}
+
+.was-validated :invalid ~ .invalid-feedback.d-block,
+.was-validated :invalid ~ .invalid-tooltip.d-block,
+.is-invalid ~ .invalid-feedback.d-block,
+.is-invalid ~ .invalid-tooltip.d-block {
+  color: $red;
+  span{
+    &:before{
+      content: "\e906";
+    }
+  }
+}

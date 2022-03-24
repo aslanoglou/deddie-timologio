@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/timologio.css" rel="stylesheet">
+
+    <title>Tιμολόγιο υπηρεσιών αλληλεγγύης</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <button class="navbar-toggler collapsed d-lg-none me-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="" class="header__logo"><img src="dist/images/logo.svg" alt="ΔΕΔΔΗΕ" width="99" height="49"></a>
+            </div>
+            <div class="col-auto">
+                <h1 class="text-center">Tιμολόγιο υπηρεσιών αλληλεγγύης</h1>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex align-items-start">
+                    <a href="" class="header__support">
+                        <span class="icon-support"></span>
+                    </a>
+                    <!--HIDDEN class="btn btn-transparent w-auto ms-3 d-none" -->
+                    <a href="" class="btn btn-transparent w-auto ms-3">
+                        ΕΙΣΟΔΟΣ
+                    </a>
+                    <!--HIDDEN class="account-box d-none ms-3" -->
+                    <div class="account-box ms-3">
+                        <a href="" class="account-box__icon">
+                            <span class="icon-profile"></span>
+                        </a>
+                        <div class="account-box__tooltip">
+                            <div class="account-box__tooltip__name">Γεώργιος Παπαδάκης</div>
+                            <a href="" class="fw-bold">Aλλαγή κωδικού πρόσβασης</a>
+                            <a href="" class="fw-bold">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.625 11.75L3.28125 11.75C2 11.75 1.25 10.8686 1.25 9.78125L1.25 3.21875C1.25 2.13144 2 1.25 3.28125 1.25L3.625 1.25M8 3.875L10.625 6.5M10.625 6.5L8 9.125M10.625 6.5L3.75 6.5"
+                                          stroke="#1242B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Αποσύνδεση</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container">
+            <a class="text-decoration-none white-color me-2" aria-current="page" href="#">Αρχική</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Υπηρεσίες
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Αλλαγή κωδικού πρόσβασης</a></li>
+                            <li><a class="dropdown-item" href="#">Υπηρεσία αλληλεγγύης</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="content content--min-height-310 mb-3">
+        <h2 class="text-center mb-5 max-510">Αναζήτηση Προσωρινά Αποθηκευμένου Αιτήματος προς Ακύρωση</h2>
+        <form class="g-3 needs-validation" novalidate>
+            <div class="row px-3 px-md-5">
+                <div class="col col-12 col-md mb-4">
+                    <label for="afm" class="form-label fw-bold">ΑΦΜ</label>
+                    <input type="number" class="form-control" id="afm" placeholder="Εισάγετε τον ΑΦΜ" required>
+                    <div class="invalid-feedback">
+                        Το πεδίο είναι υποχρεωτικό
+                    </div>
+                </div>
+                <div class="col col-12 col-md mb-5">
+                    <label for="password" class="form-label fw-bold d-flex align-items-center">Αριθμός παροχής
+                        <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="9-ψήφιος αριθμός παροχής όπως
+αναγράφεται στον λογαριασμό ενέργειας:<br> <span>1 23456789-01</span> 5" class="lh-1">
+                    <span class="icon-info orange-color ms-1 fs-16"></span>
+                </a>
+                    </label>
+                    <input type="password" class="form-control" id="password" placeholder="Εισάγετε τον αριθμό παροχής"
+                           required>
+                    <div class="invalid-feedback">
+                        Το πεδίο είναι υποχρεωτικό
+                    </div>
+                </div>
+                <div class="col col-12 col-md-auto mb-4 align-self-md-start text-center">
+                    <button class="btn btn-primary mt-4" type="submit" role="button">Aναζήτηση</button>
+                </div>
+            </div>
+            <div class="results mb-4 d-none">
+                <div class="row align-items-center justify-content-md-between">
+                    <div class="col-12 col-md-auto">
+                        <div class="px-2">
+                            <h4 class="blue-color fw-bold fs-14">Iστορικό ενδείξεων καταχωρητών παροχής</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <div class="px-2">
+                            <div class="input-group mb-3 search-group">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive mb-4">
+                    <table class="table align-middle" style="width: 100%">
+                        <colgroup>
+                            <col span="1" style="width: 129px;">
+                            <col span="1" style="width: 137px;">
+                            <col span="1" style="width: 177px;">
+                            <col span="1" style="max-width: 208px;">
+                            <col span="1">
+                            <col span="1">
+                        </colgroup>
+                        <thead>
+                        <tr class="align-top">
+                            <th scope="col">Ημερομηνία μέτρησης</th>
+                            <th scope="col">Αριθμός<br> μετρητή</th>
+                            <th scope="col">Έναρξη <br>αέργου ενέργειας<br>(kVARh)</th>
+                            <th scope="col">Έναρξη αέργου ενέργειας<br>(kVARh)</th>
+                            <th scope="col">Έναρξη έγχυσης <br>(kWh)</th>
+                            <th scope="col">Έναρξη<br>παραγωγής (kWh)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="align-top">
+                            <td>29/11/21</td>
+                            <td>123456789</td>
+                            <td>12738.918</td>
+                            <td>12738.918</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row justify-content-md-between">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <select class="form-select form-select--transparent w-auto" aria-label="Default select example">
+                            <option selected>10</option>
+                            <option value="1">10</option>
+                            <option value="2">20</option>
+                            <option value="3">30</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <nav aria-label="Page navigation example" class="max-410">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="" aria-label="Previous">
+                                        <span class="icon-chevron-left"></span>
+                                        <span aria-hidden="true"
+                                              class="d-flex align-items-center"><strong>Προηγούμενο</strong></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="">2</a></li>
+                                <li class="page-item"><a class="page-link" href="">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="" aria-label="Next">
+                                        <span aria-hidden="true"
+                                              class="d-flex align-items-center"><strong>Επόμενο</strong></span>
+                                        <span class="icon-chevron-right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 text-md-end">
+                        <a href=""><img src="/dist/images/icon-download.svg"></a>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    ΔΕΔΔΗΕ 2022
+</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/timologio.js"></script>
+</body>
+</html>

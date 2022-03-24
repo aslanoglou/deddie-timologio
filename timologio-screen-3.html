@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/timologio.css" rel="stylesheet">
+
+    <title>Tιμολόγιο υπηρεσιών αλληλεγγύης</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <button class="navbar-toggler collapsed d-lg-none me-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="" class="header__logo"><img src="dist/images/logo.svg" alt="ΔΕΔΔΗΕ" width="99" height="49"></a>
+            </div>
+            <div class="col-auto">
+                <h1 class="text-center">Tιμολόγιο υπηρεσιών αλληλεγγύης</h1>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex align-items-start">
+                    <a href="" class="header__support">
+                        <span class="icon-support"></span>
+                    </a>
+                    <!--HIDDEN class="btn btn-transparent w-auto ms-3 d-none" -->
+                    <a href="" class="btn btn-transparent w-auto ms-3">
+                        ΕΙΣΟΔΟΣ
+                    </a>
+                    <!--HIDDEN class="account-box d-none ms-3" -->
+                    <div class="account-box ms-3">
+                        <a href="" class="account-box__icon">
+                            <span class="icon-profile"></span>
+                        </a>
+                        <div class="account-box__tooltip">
+                            <div class="account-box__tooltip__name">Γεώργιος Παπαδάκης</div>
+                            <a href="" class="fw-bold">Aλλαγή κωδικού πρόσβασης</a>
+                            <a href="" class="fw-bold">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.625 11.75L3.28125 11.75C2 11.75 1.25 10.8686 1.25 9.78125L1.25 3.21875C1.25 2.13144 2 1.25 3.28125 1.25L3.625 1.25M8 3.875L10.625 6.5M10.625 6.5L8 9.125M10.625 6.5L3.75 6.5"
+                                          stroke="#1242B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Αποσύνδεση</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container">
+            <a class="text-decoration-none white-color me-2" aria-current="page" href="#">Αρχική</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Υπηρεσίες
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Αλλαγή κωδικού πρόσβασης</a></li>
+                            <li><a class="dropdown-item" href="#">Υπηρεσία αλληλεγγύης</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="content mb-3">
+        <h2 class="text-center mb-5">Δημιουργία Νέας Αίτησης</h2>
+        <form class="g-3 needs-validation" novalidate>
+            <div class="max-410">
+                <div class="mb-5">
+                    <h4 class="fs-14 fw-bold">Κατηγορία Β</h4>
+                    <p>Εκκλησιαστικά ιδρύματα τα οποία παρέχουν υπηρεσίες κοινωνικής σίτισης μέσω διατήρησης ειδικών προς τούτο χώρων (μαγειρεία, αίθουσες διάθεσης συσσιτίου).</p>
+                    <p><a href="" class="fw-bold text-decoration-none d-flex justify-content-end align-items-center">Αλλαγή κατηγορίας <span class="ms-2 icon-chevron-right"></span></a></p>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md mb-4">
+                        <label for="number" class="form-label fw-bold d-flex align-items-center">Αριθμός παροχής
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="9-ψήφιος αριθμός παροχής όπως
+αναγράφεται στον λογαριασμό ενέργειας:<br> <span>1 23456789-01</span> 5" class="lh-1">
+                                <span class="icon-info orange-color ms-1 fs-16"></span>
+                            </a>
+                        </label>
+                        <input type="number" class="form-control" id="number" placeholder="11 ψηφία χωρίς κενά/ παύλες"
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-auto mt-4 mb-4 text-center">
+                        <button class="btn btn-primary" type="submit" role="button">Aναζήτηση</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="results mb-4">
+                <div class="max-410">
+                    <div class="table-responsive mb-4">
+                        <table class="table table--no-tr-border table--th-right-border">
+                            <colgroup>
+                                <col span="1">
+                                <col span="1"style="width: 50%;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Επωνυμία Πελάτη</th>
+                                <td>Παπαδόπουλος Κωνσταντίνος</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Προμηθευτής</th>
+                                <td>Σκλαβενιτης Α.Ε.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Οδός</th>
+                                <td>Κηφισίας</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Αριθμός</th>
+                                <td>34Β</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Πόλη</th>
+                                <td>Αθήνα</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Τ.Κ.</th>
+                                <td>13465</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex">
+                        <span class="icon-info fs-16 me-2 peach-color"></span>
+                        <div class="grey-color fs-10">
+                            Παρακαλούμε ελέγξτε τα παραπάνω στοιχεία που αναγράφονται στην αίτηση. Στην περίπτωση που η αναγραφόμενη επωνυμία χρήστη δεν αποτελεί και την επωνυμία του Φορέα, όπως αυτή αναγράφεται στο καταστατικό, θα πρέπει να μεριμνήσετε προηγουμένως για την αντίστοιχη αλλαγή του ονόματος (αλλαγή χρήστη παροχής ηλεκτρικού ρεύματος), απευθυνόμενοι στον Προμηθευτή που εκπροσωπεί την παροχή σας. Στην περίπτωση του Παραρτήματος ή αλλων εγκαταστάσεων που ανήκουν στον Φορέα, το όνομα χρήστη παροχής θα πρέπει να είναι το ίδιο με την επωνυμία του Φορέα στον οποίον υπάγεται.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-410">
+                <div class="row align-items-md-end">
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="fek" class="form-label fw-bold d-flex align-items-center">Πλήρης Επωνυμία στο Φ.Ε.Κ.
+                            Πιστοποίησης Φορέα</label>
+                        <input type="text" class="form-control" id="fek" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="afm" class="form-label fw-bold d-flex align-items-center">Α.Φ.Μ.</label>
+                        <input type="number" class="form-control" id="afm" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <a href="" class="fw-bold mb-4">Επιλέξτε σύμφωνα με τα οριζόμενα στην υπ. αρ. 23824/23-12-2013 υπουργική απόφαση (ΦΕΚ Β΄3274) :*</a>
+                </div>
+                <div class="form-check mb-2 d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Μαγειρείο
+                    </label>
+                </div>
+                <div class="form-check mb-4 d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" required>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Αίθουσα διάθεσης συσσιτίου
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Επιλέξτε τον Εκκλησιαστικό Φορέα στον οποίο υπάγεται ο υπόψη
+                        χώρος :*</label>
+                    <select class="form-select form-select--transparent form-select--no-wrap" aria-label="Default select example" required >
+                        <option value="" disabled selected hidden>Επιλέξτε</option>
+                        <option value="1">Πιστοποιημένες</option>
+                        <option value="2">Πιστοποιημένες</option>
+                        <option value="3">Πιστοποιημένες</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Το πεδίο είναι υποχρεωτικό
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="fs-14 fw-bold text-center">Τηλέφωνα Επικοινωνίας</h4>
+                    <div class="d-flex">
+                        <span class="icon-info fs-16 me-2 peach-color"></span>
+                        <div class="grey-color fs-10">
+                            Τα τηλέφωνα είναι 10ψήφιοι αριθμοί και δεν πρέπει να περιέχουν παύλες ή κενό.
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-md-end mb-72">
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="stathero" class="form-label fw-bold d-flex align-items-center">Σταθερό</label>
+                        <input type="tel" class="form-control" id="stathero" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="kinito" class="form-label fw-bold d-flex align-items-center">Κινητό</label>
+                        <input type="tel" class="form-control" id="kinito" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="email" class="form-label fw-bold d-flex align-items-center">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label for="fax" class="form-label fw-bold d-flex align-items-center">Fax</label>
+                        <input type="tel" class="form-control" id="fax" placeholder=""
+                               required>
+                        <div class="invalid-feedback">
+                            Το πεδίο είναι υποχρεωτικό
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-5">
+                    <button class="btn btn-primary" type="submit" role="button">Αναζήτηση</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    ΔΕΔΔΗΕ 2022
+</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/timologio.js"></script>
+</body>
+</html>

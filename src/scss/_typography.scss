@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Ping LCG';
+  src: url('/dist/fonts/PingLCG-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ping LCG';
+  src: url('/dist/fonts/PingLCG-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/dist/fonts/deddie-icons.eot?jv4yrd');
+  src:  url('/dist/fonts/deddie-icons.eot?jv4yrd#iefix') format('embedded-opentype'),
+  url('/dist/fonts/deddie-icons.ttf?jv4yrd') format('truetype'),
+  url('/dist/fonts/deddie-icons.woff?jv4yrd') format('woff'),
+  url('/dist/fonts/deddie-icons.svg?jv4yrd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-error:before {
+  content: "\e90e";
+  color: currentColor;
+}
+.icon-filter:before {
+  content: "\e90d";
+  color: currentColor;
+}
+.icon-refresh:before {
+  content: "\e90c";
+  color: currentColor;
+}
+.icon-bin:before {
+  content: "\e902";
+  color: currentColor;
+}
+.icon-chevron-left:before {
+  content: "\e900";
+  color: currentColor;
+}
+.icon-chevron-right:before {
+  content: "\e901";
+  color: currentColor;
+}
+.icon-calendar:before {
+  content: "\e903";
+  color: currentColor;
+}
+.icon-check:before {
+  content: "\e904";
+  color: currentColor;
+}
+.icon-download:before {
+  content: "\e905";
+  color: currentColor;
+}
+.icon-green-check:before {
+  content: "\e906";
+  color: currentColor;
+}
+.icon-info:before {
+  content: "\e907";
+  color: currentColor;
+}
+.icon-logout:before {
+  content: "\e908";
+  color: currentColor;
+}
+.icon-profile:before {
+  content: "\e909";
+  color: currentColor;
+}
+.icon-search:before {
+  content: "\e90a";
+  color: currentColor;
+}
+.icon-support:before {
+  content: "\e90b";
+  color: currentColor;
+}
+
+
+
+h1{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h2{
+  font-size: 20px;
+  line-height: 24px;
+}

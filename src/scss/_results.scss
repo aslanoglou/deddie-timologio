@@ -1,0 +1,47 @@
+.results{
+  background-color: $deddie-light-blue-1;
+  padding: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  table{
+    min-width: 100%;
+    & > :not(:first-child){
+      border-top: none;
+    }
+    th{
+      border-bottom: none;
+    }
+    tbody{
+      tr{
+        border-bottom: solid 1px $deddie-light-grey-1;
+        td{
+          line-height: 14.4px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+    &.table--no-tr-border{
+      tbody{
+        tr{
+          border-bottom: none;
+        }
+        td{
+          border-bottom: none;
+        }
+      }
+
+    }
+    &.table--th-right-border{
+      tbody{
+        th{
+          border-right: solid 1px $deddie-light-grey-1;
+        }
+      }
+
+    }
+  }
+  &--green{
+    background-color: $deddie-light-green-1;
+  }
+}

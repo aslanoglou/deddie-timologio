@@ -1,0 +1,22 @@
+.nav-tabs{
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-bottom: none;
+  .nav-link{
+    font-weight: bold;
+    color: $deddie-light-blue-2;
+    &.active{
+      color: $blue;
+      border: none;
+      background-color: $deddie-light-blue-1;
+      border-radius: 0;
+    }
+  }
+}
+.tab-content{
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 26px 1rem 36px;
+  background-color: $deddie-light-blue-1;
+  font-size: 12px;
+}
